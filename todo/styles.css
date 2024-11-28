@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Todo Container */
+  .todo-container {
+    background-color: #162447;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Progress Bar */
+  .progress-bar-container {
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 10px;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: red; /* Initial color */
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .progress-text {
+    margin: 5px 0;
+  }
+  
+  /* Input Section */
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .add-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #4b3ba5;
+  }
+  
+  /* Task List */
+  #task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1f4068;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .task-item.completed .task-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .task-text {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .edit-button:hover {
+    color: yellow;
+  }
+  
+  .delete-button:hover {
+    color: red;
+  }
+  
